@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+.alignleft{
+    float: left;
+    margin-right: 15px;
+}
+.alignright{
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus, input:focus, textarea:focus, button:focus{
+    outline: 0 solid;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0 0 15px;
+    font-weight: 900;
+}
+body{
+    /* background: #2D3142; */
+    font-family: 'Raleway', sans-serif;
+} 
+
+/* --section style sheet start-- */
+.section-padding{
+    padding: 80px 0;
+}
+.single-slide-item{
+    background-image: url('../css/img/doctor.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ddd;
+    height: 450px;
+    position: relative;
+}
+
+.slide-text-area {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.slide-text {
+    background: cornflowerblue;
+    color: #fff;
+    padding: 60px 150px 60px 0px;
+    /* padding-top: 60px; */
+    /* padding-right: 124px; */
+    font-size: 18px;
+    line-height: 1.8;
+    position: relative;
+    opacity: 0.90;
+}
+
+.slide-text h2 {
+    font-family: roboto;
+    font-size: 44px;
+}
+
+a.boxed-btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 8px 20px;
+}
+
+.slide-text:before {
+    position: absolute;
+    left: -1000%;
+    bottom: 0%;
+    width: 1000%;
+    background-color: cornflowerblue;
+    content: '';
+    height: 100%;
+}
+
+.slide-text:after {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 30px;
+    right: -15px;
+    content: '';
+    background: cornflowerblue;
+    transform: rotate(45deg);
+    opacity: 0.90;
+}
